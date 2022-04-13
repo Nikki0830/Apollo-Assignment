@@ -1,0 +1,20 @@
+h2 {
+  margin-left: 37%;
+  font-size: 30px;
+  color: rgb(96, 202, 237);
+  font-family: "Helvetica Neue";
+}
+img {
+  margin-left: 18%;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom:20px;
+}
+a {
+  margin-left: 38%;
+  font-size: 30px;
+  color: rgb(96, 202, 237);
+  font-family: "Helvetica Neue";
+  /* margin-top:20px; */
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="booking">Appointment Booking</h1>
+    <div id="main"></div>
+  </body>
+</html>
+
+<script>
+  var data = [
+    {
+      FirstName: "Mini",
+      specialist: "Anesthesiology",
+      Gender: "Female",
+      Fees: "800",
+      img: "https://media.baamboozle.com/uploads/images/50597/1627334577_292417_gif-url.gif",
+    },
+    {
+      FirstName: "Willey",
+      specialist: "Dermatology",
+      Gender: "Male",
+      Fees: "600",
+      img: "https://i.pinimg.com/originals/9d/d5/4c/9dd54cab3b383726be62b529406f8328.gif",
+    },
+    {
+      FirstName: "Vickie",
+      specialist: "Psychiatry",
+      Gender: "Female",
+      Fees: "500",
+      img: "https://media1.giphy.com/media/T1Dl44zDUEAGBTrD6u/giphy.gif",
+    },
+    {
+      FirstName: "Hadleigh",
+      specialist: "Pediatrics",
+      Fees: "1000",
+      Gender: "Male",
+      img: "https://media0.giphy.com/media/htYcYEYT50sPJRB7eR/giphy.gif",
+    },
+    {
+      FirstName: "Rena",
+      specialist: "Clinical Immunology/Allergy",
+      Fees: "500",
+      Gender: "Female",
+      img: "https://i.pinimg.com/originals/b3/50/80/b3508029dffcbea522fccad4f69e120a.gif",
+    },
+    {
+      FirstName: "Ellyn",
+      specialist: "Nephrology",
+      Fees: "700",
+      Gender: "Male",
+      img: "https://c.tenor.com/eRpA8wX8_ncAAAAC/dr-doctor.gif",
+    },
+  ];
+  function showProducts() {
+    data.map(function (item) {
+      var imageDiv = document.createElement("div");
+      imageDiv.setAttribute("id", "all");
+
+      var img = document.createElement("img");
+      img.setAttribute("src", item.img);
+      img.setAttribute("id", "pic");
+
+      var h4 = document.createElement("p");
+      h4.setAttribute("id", "text1");
+      h4.textContent = item.FirstName;
+
+      var h5 = document.createElement("p");
+      h5.setAttribute("id", "text2");
+      h5.textContent = item.specialist;
+
+      var h2 = document.createElement("p");
+      h2.setAttribute("id", "text3");
+      h2.textContent = item.Gender;
+
+      var h3 = document.createElement("p");
+      h3.setAttribute("id", "text4");
+      // h3.textContent = item.Fees;
+      h3.innerHTML = "Fees - " + item.Fees;
+
+      var btn = document.createElement("button");
+      btn.textContent = "Book Appointment";
+      btn.setAttribute("id", "hbtn");
+      btn.addEventListener("click", book);
+      function book() {
+        window.location.href = "index3.html";
+      }
+
+      imageDiv.append(img, h4, h5, h2, h3, btn);
+
+      document.getElementById("main").append(imageDiv);
+      //   mainDiv.append(imageDiv);
+    });
+  }
+  showProducts();
+</script>

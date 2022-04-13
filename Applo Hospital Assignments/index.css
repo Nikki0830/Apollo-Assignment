@@ -1,0 +1,70 @@
+#pic {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+}
+#main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#all {
+  /* border: 1px solid yellow; */
+  margin: auto;
+}
+.booking {
+  text-align: center;
+  background: linear-gradient(lightblue, rgb(212, 212, 237));
+  font-family: "Helvetica Neue";
+  color: rgb(59, 59, 221);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+}
+#hbtn {
+  margin-left: 35px;
+  background-color: lightblue;
+  padding: 10px;
+  color: rgb(21, 111, 141);
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#hbtn:hover {
+  background-color: rgb(219, 244, 244);
+}
+#text1 {
+  font-size: 30px;
+  color: rgb(154, 225, 248);
+  font-family: "Helvetica Neue";
+}
+#text1 {
+  font-size: 30px;
+  color: rgb(154, 225, 248);
+  font-family: "Helvetica Neue";
+  line-height: 5px;
+}
+#text2 {
+  font-size: 20px;
+  color: rgb(54, 141, 170);
+  font-family: "Helvetica Neue";
+  line-height: 3px;
+}
+#text3 {
+  font-size: 15px;
+  color: rgb(54, 141, 170);
+  font-family: "Helvetica Neue";
+  line-height: 3px;
+}
+#text4 {
+  font-size: 20px;
+  color: rgb(127, 206, 233);
+  font-family: "Helvetica Neue";
+  line-height: 3px;
+}
